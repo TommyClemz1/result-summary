@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;;
+}
+
+
+
+:root{
+   --Light_red: hsl(0, 100%, 67%);
+   --Orangey_yellow: hsl(39, 100%, 56%);
+   --Green_teal: hsl(166, 100%, 37%);
+   --Cobalt_blue: hsl(234, 85%, 45%);
+
+   /* gradients */
+
+   --Light_slate_blue: hsl(252, 100%, 67%);
+   --Light_royal_blue: hsl(241, 81%, 54%);
+
+   --Violet_blue: hsla(256, 72%, 46%, 1);
+   --Persian_blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+   --Pale_blue: hsl(221, 100%, 96%);
+   --Light_lavender: hsl(241, 100%, 89%);
+   --Dark_gray_blue: hsl(224, 30%, 27%);
+
+}
+
+
+
+.container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-top: 4rem;
+   border-radius: 6px;
+    align-items: center;
+    margin-left: 25%;
+    box-shadow:0px 0px 20px rgb(187, 187, 187);
+}
+section.container>div.left>h1.only{
+    margin-top: 1.6rem;
+    
+}
+
+body > section > div.left > h1:nth-child(3){
+    margin-top: 2rem;
+}
+
+
+.left{
+     
+       border-radius: 10px;
+       background-color: var(--Cobalt_blue);
+       text-align: center;
+       color: var(--White);
+       width: 50%;
+height: 27rem;
+
+       
+}
+
+body > section > div.left > p{
+    width: 65%;
+margin-left: 18%;
+}
+
+div.left>div.Result{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left: 23.5%;
+    position: relative;
+    margin-top: 2rem;
+    background-image: linear-gradient(to bottom, var(--Violet_blue), blue);
+    
+}
+
+.sevsx{
+    position: relative;
+    top: 25%;
+
+}
+
+.sevsx>h1{
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+body > section > div.left > div > div > span{
+    opacity: 0.3;
+}
+.right{
+    width: 50%;
+    padding: 1.5rem;
+    height: 27rem;
+}
+
+
+
+body > section > div.right > h1{
+    margin-top: 0px;
+}
+.visual, .reaction, .memory, .verbal, .visual{
+
+    display: flex;
+justify-content: space-between;
+border-radius: 6px;
+padding: 5px;
+}
+.reaction{
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    color: var(--Light_red);
+   background-image:linear-gradient(to right, hsl(0, 68%, 89%), var(--White));
+
+   
+}
+.memory{
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    color: var(--Orangey_yellow);
+    background-image:linear-gradient(to right, hsl(39, 77%, 88%), var(--White));
+}
+
+.verbal{
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    color: var(--Green_teal);
+    background-image:linear-gradient(to right, hsl(166, 75%, 88%), var(--White));
+}
+
+.visual{
+
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    color: var(--Cobalt_blue);
+    background-image:linear-gradient(to right, hsl(235, 71%, 79%), var(--White));
+}
+
+
+body > section > div.right > h1{
+    margin-bottom: 1.5rem;
+}
+
+
+body > section > div.right > div.reaction > p{
+
+    color: var(--Dark_gray_blue);
+    font-weight: 800;
+}
+
+body > section > div.right > div.memory > p{
+color: var(--Dark_gray_blue);
+font-weight: 800;
+
+}
+body > section > div.right > div.verbal > p{
+color: var(--Dark_gray_blue);
+font-weight: 800;
+
+}
+body > section > div.right > div.visual > p{
+color: var(--Dark_gray_blue);
+font-weight: 800;
+
+}
+span{
+    opacity: 0.7;
+}
+
+body > section > div.right > button{
+
+    width: 85%;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: 1.5rem;
+    outline: none;
+    color: white;
+    background-color: var(--Dark_gray_blue);
+    border: none;
+    margin-top: -20px;
+}
+
+
+
+@media (max-width:375px) {
+
+    .container{
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+    .left{width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        height: 22rem;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    div.left>div.Result{
+       
+       
+        margin-left: 30.5%;
+        height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-top: 0px;
+        
+    }
+   
+    body > section > div.left > p{
+        width: 65%;
+    margin-top: -10px;
+    }
+
+    body > section > div.left > h1.Great{
+    
+    }
+
+    body > section > div.left > p{
+        width: 70%;}
+}
